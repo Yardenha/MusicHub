@@ -23,8 +23,14 @@ namespace MusicHub
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/flipster").Include(
+                        "~/Scripts/jquery.flipster.js",
+                        "~/Scripts/jquery.flipster.min.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/override.css",
+                      "~/Content/jquery.flipster.css",
                       "~/Content/site.css"));
         }
     }
